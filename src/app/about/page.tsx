@@ -13,7 +13,7 @@ const up = (delay = 0) => ({
   initial: { opacity: 0, y: 28 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, amount: 0.12 },
-  transition: { duration: 0.7, delay, ease: [0.22, 0.68, 0, 1] },
+  transition: { duration: 0.7, delay, ease: [0.22, 0.68, 0, 1] as const },
 });
 
 const expertise = [

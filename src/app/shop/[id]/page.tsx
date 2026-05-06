@@ -14,7 +14,7 @@ import { notFound } from "next/navigation";
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, delay, ease: [0.22, 0.68, 0, 1] },
+  transition: { duration: 0.6, delay, ease: [0.22, 0.68, 0, 1] as const },
 });
 
 export default function ProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
@@ -25,9 +25,14 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
     notFound();
   }
 
-  const relatedProducts = products
-    .filter((p) => p.id !== product.id && (p.category === product.category || Math.random() > 0.5))
-    .slice(0, 4);
+ const relatedProducts = products
+  .filter((p) => p.id !== product.id)
+  .sort((a, b) => {
+    if (a.category === product.category && b.category !== product.category) return -1;
+    if (a.category !== product.category && b.category === product.category) return 1;
+    return a.name.localeCompare(b.name);
+  })
+  .slice(0, 4);
 
   return (
     <div className="min-h-screen pt-28 pb-20" style={{ background: "var(--cream)" }}>
