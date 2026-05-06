@@ -197,7 +197,6 @@ export const categories = [
   "Ayurvedic Oils",
   "Hair Wellness",
   "Skin Wellness",
-  "Herbal Cleansers",
   "Internal Wellness",
   "Hair Care Solutions",
   "Specialized Hair Support"

@@ -47,7 +47,7 @@ const services = [
     colClass: "lg:col-span-2",
     bg: "linear-gradient(140deg, #1F3A2C 0%, #2D5040 100%)",
     light: true,
-    accent: "rgba(163,177,138,0.45)",
+    accent: "rgba(5, 7, 0, 0.45)",
   },
   {
     id: "yoga",
@@ -159,9 +159,7 @@ export default function ServicesSection() {
               {/* Decorative radial blob */}
               <div
                 className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full pointer-events-none"
-                style={{
-                  background: `radial-gradient(circle, ${svc.accent} 0%, transparent 70%)`,
-                }}
+               
               />
 
               {/* Content */}

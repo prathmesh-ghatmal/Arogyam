@@ -73,7 +73,7 @@ export default function ShopPage() {
         
         {/* ── 2. FILTERS (Sidebar) ────────────────────────────── */}
         <aside className="lg:col-span-1">
-          <div className="sticky top-32">
+          <div className="sticky top-28">
              <div className="flex items-center gap-2 mb-6">
                 <Filter size={16} className="text-gold" />
                 <h3 className="font-serif text-lg" style={{ color: "var(--deep-green)", fontFamily: "var(--font-serif)" }}>Categories</h3>
@@ -95,7 +95,7 @@ export default function ShopPage() {
              </div>
 
              {/* Badge */}
-             <div className="mt-12 p-6 rounded-2xl" style={{ background: "linear-gradient(135deg, #1F3A2C 0%, #234733 100%)" }}>
+             <div className="mt-8 p-6 rounded-2xl" style={{ background: "linear-gradient(135deg, #1F3A2C 0%, #234733 100%)" }}>
                <p className="eyebrow text-[0.6rem] mb-2" style={{ color: "var(--gold)" }}>Why Choose Us</p>
                <h4 className="font-serif text-white mb-4" style={{ fontFamily: "var(--font-serif)" }}>Authentic Formulations</h4>
                <ul className="text-[10px] text-white/60 flex flex-col gap-2">
