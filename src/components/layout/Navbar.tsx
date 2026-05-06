@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import Image from "next/image";
 const navLinks = [
   { label: "Home",     href: "/" },
   { label: "About",    href: "/about" },
@@ -40,19 +40,30 @@ export default function Navbar() {
       >
         <div className="container-xl flex items-center justify-between" style={{ height: "72px" }}>
           {/* Brand */}
-          <Link href="/" className="flex flex-col leading-none group" aria-label="Arogya Mantra Home">
-            <span
-              className="font-serif text-xl font-semibold tracking-tight transition-colors duration-300"
-              style={{ color: brandColor, fontFamily: "var(--font-serif)" }}
-            >
-              Arogya Mantra
-            </span>
-            <span
-              className="eyebrow mt-0.5"
-              style={{ color: "var(--gold)", fontSize: "0.6rem" }}
-            >
-              Multispeciality Clinic
-            </span>
+          <Link href="/" className="flex items-center gap-3 leading-none group" aria-label="Arogya Mantra Home">
+            <div className="relative w-10 h-10 flex-shrink-0">
+              <Image 
+                src="/arogyam.png" 
+                alt="Arogya Mantra Logo" 
+                fill 
+                className="object-contain"
+                priority
+              />
+            </div>
+            <div className="flex flex-col">
+              <span
+                className="font-serif text-lg font-semibold tracking-tight transition-colors duration-300"
+                style={{ color: brandColor, fontFamily: "var(--font-serif)" }}
+              >
+                Arogya Mantra
+              </span>
+              <span
+                className="eyebrow mt-0.5"
+                style={{ color: "var(--gold)", fontSize: "0.55rem" }}
+              >
+                Multispeciality Clinic
+              </span>
+            </div>
           </Link>
 
           {/* Desktop nav */}

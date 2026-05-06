@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { MapPin, Phone, Mail, ArrowUpRight, Globe, Share2, Play } from "lucide-react";
-
+import Image from "next/image";
 
 const quickLinks = [
   { label: "About Us",         href: "/about" },
@@ -39,16 +39,26 @@ export default function Footer() {
 
           {/* Brand column */}
           <div className="lg:col-span-2 flex flex-col gap-6">
-            <div>
-              <p
-                className="font-serif text-2xl font-semibold"
-                style={{ color: "var(--cream)", fontFamily: "var(--font-serif)", lineHeight: 1.2 }}
-              >
-                Arogya Mantra
-              </p>
-              <p className="eyebrow mt-1" style={{ color: "var(--gold)", fontSize: "0.6rem" }}>
-                Multispeciality Clinic
-              </p>
+            <div className="flex items-center gap-4">
+              <div className="relative w-12 h-12">
+                <Image 
+                  src="/arogyam.png" 
+                  alt="Arogya Mantra Logo" 
+                  fill 
+                  className="object-contain"
+                />
+              </div>
+              <div>
+                <p
+                  className="font-serif text-2xl font-semibold"
+                  style={{ color: "var(--cream)", fontFamily: "var(--font-serif)", lineHeight: 1.2 }}
+                >
+                  Arogya Mantra
+                </p>
+                <p className="eyebrow mt-1" style={{ color: "var(--gold)", fontSize: "0.6rem" }}>
+                  Multispeciality Clinic
+                </p>
+              </div>
             </div>
             <p className="text-sm leading-relaxed max-w-sm" style={{ color: "rgba(245,241,232,0.65)" }}>
               Healing through Ayurveda. A modern clinical approach to ancient medicinal wisdom for lasting wellness — nurturing the body, mind, and soul in harmony.
