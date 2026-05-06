@@ -196,7 +196,7 @@ export default function HeroSection() {
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6, duration: 0.6 }}
-            className="float-badge absolute -right-6 bottom-[20%] p-4"
+            className="float-badge absolute -right-6 bottom-[10%] p-4"
             style={{ minWidth: "180px" }}
           >
             <p className="eyebrow mb-1.5" style={{ color: "var(--gold)", fontSize: "0.55rem" }}>This Month&apos;s Special</p>

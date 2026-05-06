@@ -88,7 +88,7 @@ export const products: Product[] = [
       "Holistic wellness care"
     ],
     price: 450,
-    image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1677339466071-6c59e8840088?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: "chyawanprash",
@@ -108,7 +108,8 @@ export const products: Product[] = [
       "Family wellness support"
     ],
     price: 1200,
-    image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800&auto=format&fit=crop"
+    
+    image: "https://images.unsplash.com/photo-1694457331480-b709d8496b1a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: "hair-care-shampoo",
@@ -148,7 +149,7 @@ export const products: Product[] = [
       "Hair cleansing"
     ],
     price: 640,
-    image: "https://images.unsplash.com/photo-1599443015574-be5fe8a05783?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: "hair-colour",
