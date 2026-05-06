@@ -178,7 +178,7 @@ export default function HeroSection() {
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.45, duration: 0.6 }}
-            className="float-badge absolute -left-8 top-[15%] p-4 flex items-center gap-3"
+            className="float-badge absolute -left-8 top-[15%] p-4 hidden lg:flex items-center gap-3"
             style={{ minWidth: "190px" }}
           >
             <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: "var(--deep-green)" }}>
@@ -196,7 +196,7 @@ export default function HeroSection() {
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6, duration: 0.6 }}
-            className="float-badge absolute -right-6 bottom-[10%] p-4"
+            className="float-badge absolute -right-6 bottom-[10%] p-4 hidden lg:block"
             style={{ minWidth: "180px" }}
           >
             <p className="eyebrow mb-1.5" style={{ color: "var(--gold)", fontSize: "0.55rem" }}>This Month&apos;s Special</p>
@@ -212,7 +212,7 @@ export default function HeroSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.75, duration: 0.55 }}
-            className="float-badge absolute -right-4 top-[8%] p-3 flex items-center gap-2"
+            className="float-badge absolute -right-4 top-[8%] p-3 hidden lg:flex items-center gap-2"
           >
             <span className="text-lg">⭐</span>
             <div>
